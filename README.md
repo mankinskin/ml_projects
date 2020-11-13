@@ -1,5 +1,17 @@
 # first_project
 
+To start the notebook server:
+
+```
+$ cargo make
+```
+or (without [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) and [cargo-make](https://sagiegurari.github.io/cargo-make/#installation))
+```
+$ jupyter notebook --browser firefox Project1.ipynb
+```
+
+## Git tutorial
+
 [How to set up git on your machine](https://kbroman.org/github_tutorial/pages/first_time.html)
 
 ### How to clone a git repository
