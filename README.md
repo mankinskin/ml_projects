@@ -113,7 +113,7 @@ A   B   D   F
 `A`, `B`, `C`, etc are commits. `master` and `feature` are branches.
 As you can see, both branches share some commits (`A` and `B`) but *diverge* at some point and contain different commits.
 When working in git, you are always "on" a branch. You can switch branches using `git checkout branch_name`.
-Git will then change the contents of your current directory to match the branches' version of the repository.
+Git will then change the contents of the repositories local directory to match the branches' version of the repository.
 
 Branches can later be merged back together by using `git merge`, but this usually creates an ugly "merge commit",
 where any conflicts between the two branches are fixed. It is better to rebase one of the branches first, and then merge by "fast-forwarding":
