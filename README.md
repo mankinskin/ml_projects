@@ -63,11 +63,11 @@ To add an entire file or directory to be commited, use:
 ```
 $ git add my_file
 ```
-To add all changes to tracked files, use:
+To add all changes to tracked files, use `add --update`:
 ```
 $ git add -u
 ```
-To selectively pick changes to be added use `add --patch`:
+To selectively pick changes to be added use `--patch`:
 ```
 $ git add -u -p
 ```
@@ -87,7 +87,7 @@ $ git commit -m "Add solution for kNN-Classifier"
 ```
 This is also fine, but it is often useful to review the changes and be able to write a commit message on multiple lines.
 Commit messages should use an imperative language to describe their changes. Reading commits should be like reading a log of commands.
-[How to write good commit messages](https://chris.beams.io/posts/git-commit/)
+[How to write good commit messages.](https://chris.beams.io/posts/git-commit/)
 Commits should also be easy to understand and it is best to package changes into many well described commits than into one commit doing multiple things.
 
 #### Pushing local commits
@@ -113,7 +113,7 @@ A   B   D   F
 `A`, `B`, `C`, etc are commits. `master` and `feature` are branches.
 As you can see, both branches share some commits (`A` and `B`) but *diverge* at some point and contain different commits.
 When working in git, you are always "on" a branch. You can switch branches using `git checkout branch_name`.
-Git will then change the contents of the repositories local directory to match the branches' version of the repository.
+Git will then change the contents of your local repository's directory to match the branches' version of the repository.
 
 Branches can later be merged back together by using `git merge`, but this usually creates an ugly "merge commit",
 where any conflicts between the two branches are fixed. It is better to rebase one of the branches first, and then merge by "fast-forwarding":
