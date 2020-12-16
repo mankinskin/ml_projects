@@ -1,4 +1,4 @@
-# first_project
+# Machine Learning Projects
 
 To start the notebook server:
 
