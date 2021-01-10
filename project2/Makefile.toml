@@ -1,6 +1,7 @@
 [env]
 BROWSER = "firefox"
 NOTEBOOK = "Project2.ipynb"
+FEEDBACK = "feedback.ipynb"
 
 [config]
 skip_core_tasks = true
@@ -11,3 +12,7 @@ dependencies = ["start"]
 [tasks.start]
 command = "jupyter"
 args = ["notebook", "--browser", "${BROWSER}", "${NOTEBOOK}"]
+
+[tasks.feedback]
+command = "jupyter"
+args = ["notebook", "--browser", "${BROWSER}", "${FEEDBACK}"]
