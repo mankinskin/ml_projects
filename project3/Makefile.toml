@@ -1,0 +1,13 @@
+[env]
+BROWSER = "firefox"
+NOTEBOOK = "feedback.ipynb"
+
+[config]
+skip_core_tasks = true
+
+[tasks.default]
+dependencies = ["start"]
+
+[tasks.start]
+command = "jupyter"
+args = ["notebook", "--browser", "${BROWSER}", "${NOTEBOOK}"]
