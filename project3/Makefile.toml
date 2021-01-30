@@ -1,6 +1,6 @@
 [env]
 BROWSER = "firefox"
-NOTEBOOK = "feedback.ipynb"
+NOTEBOOK = "Project3.ipynb"
 
 [config]
 skip_core_tasks = true
